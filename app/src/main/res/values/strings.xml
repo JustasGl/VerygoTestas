@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">VerygoTestas</string>
+    <string name="TopTitle">Labas!</string>
+    <string name="comment">Atlik VerygoTestą dabar ir sužinok savo padėtį!</string>
+
+    <string name="HTTP_G2_DCDN_LT_IMAGES_PIX_AURELIJUS_VERYGA_73762088_JPG">http://g2.dcdn.lt/images/pix/aurelijus-veryga-73762088.jpg</string>
+    <string name="HTTP_LSVEIKATA_LT_UPLOAD_ARTICLES_IMAGES_6870_DEF_VER_JPG">http://lsveikata.lt/upload/articles_images/6870/def/ver.jpg</string>
+    <string name="percent51_79">http://psichika.eu/feed//wp-content/uploads/2016/04/Aurelijus-Veryga.-K.-Dambrauskien%C4%97s-nuotrauka.jpeg</string>
+    <string name="percent100">http://www.ve.lt/uploads/img/catalog/1/1578/872/aurelijus-veryga-uzdraus-gerti-ir-lenkijoje.jpg</string>
+
+    <string name="TEXT_PLAIN">text/plain</string>
+    <string name="PASAK_VERYGOS_MANYJE">Pasak Verygos manyje&#160;</string>
+    <string name="ALKOHOLIKO">&#160; alkoholiko</string>
+    <string name="DALINTIS_NAUDOJANT">Dalintis naudojant</string>
+    <string name="TOLIAU">Toliau</string>
+
+    <string name="JŪSŲ_LYTIS">Jūsų lytis</string>
+    <string name="NIEKADA">Niekada</string>
+    <string name="KARTĄ_PER_MĖN_AR_REČIAU">Kartą per mėn. \n ar rečiau</string>
+    <string name="KARTUS_PER_MĖN">2 &#8211;4 kartus per mėn.</string>
+    <string name="KARTUS_PER_SAV">2 &#8211;3 kartus per sav.</string>
+    <string name="AR_DAUGIAU_KARTUS_PER_SAV">4 ar daugiau kartus \n per sav.</string>
+
+    <string name="AR_DAUGIAU10">10 ar daugiau</string>
+    <string name="AR7_9">7 ar 9</string>
+    <string name="AR5_6">5 ar 6</string>
+    <string name="AR3_4">3 ar 4</string>
+    <string name="AR1_2">1 ar 2</string>
+
+    <string name="KIEK_STANDANTINIŲ_ALKOHOLINIŲ_VIENETŲ_IŠGERIATE_EILINĘ_DIENĄ_KAI_GERIATE">Kiek standantinių alkoholinių vienetų išgeriate eilinę dieną, kai geriate?</string>
+    <string name="KAIP_DAŽNAI_JŪS_GERIATE_ALKOHOLINIUS_GĖRIMUS">Kaip dažnai jūs geriate alkoholinius gėrimus?</string>
+    <string name="KAIP_DAŽNAI_PER_DIENĄ_IŠGERIATE_6_AR_DAUGIAU_STANDARTINIŲ_ALKOHOLIO_VIENETŲ">Kaip dažnai per dieną išgeriate 6 ar daugiau standartinių alkoholio vienetų?</string>
+
+    <string name="KLAUSIMAS4">4 klausimas</string>
+    <string name="KLAUSIMAS3">3 klausimas</string>
+    <string name="KLAUSIMAS2">2 klausimas</string>
+    <string name="KLAUSIMAS">1 klausimas</string>
+
+    <string name="IŠ_NAUJO">Iš naujo</string>
+    <string name="TAVYJE_ALKOHOLIKO">Tavyje   Alkoholiko:</string>
+
+    <string name="KĄ_VAKARE">Ką vakare?</string>
+    <string name="LABAI_GERAI">Labai gerai</string>
+    <string name="GALĖJAI_IR_GERIAU">Galėjai ir geriau</string>
+    <string name="NEKAŽKĄ_NEKAŽKĄ">Nekažką, nekažką</string>
+
+    <string name="KASDIEN_ARBA_BEVEIK_KASDIEN">Kasdien arba \nbeveik kasdien</string>
+
+    <string name="KARTĄ_PER_SAVAITĘ">Kartą per savaitę</string>
+    <string name="KARTĄ_PER_MĖNESĮ">Kartą per mėnesį</string>
+    <string name="REČIAU_NEI_KARTĄ_PER_MĖNESĮ">Rečiau nei \nkartą per mėnesį</string>
+    <string name="vyras">Vyras</string>
+    <string name="moteris">Moteris</string>
+    <string name="pradeti">Pradėti</string>
+    <string name="arrow">◄</string>
+    <string name="percent">&#160;%&#160;</string>
+</resources>

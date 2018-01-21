@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Match"
+    >
+    <LinearLayout
+        style="@style/Match"
+        tools:context="com.example.android.verygotestas.MainActivity"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/marginsmall"
+            android:layout_height="wrap_content"
+            android:text="@string/TopTitle"
+            android:id="@+id/header"
+            android:textSize="@dimen/HeaderTextsize"
+            android:textAlignment="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin"
+            android:id="@+id/comment"
+            android:layout_height="wrap_content"
+            android:text="@string/comment"
+            android:textSize="@dimen/commentSize"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/smallPicHeight"
+            android:layout_marginTop="@dimen/margin"
+            android:id="@+id/pic"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginsmall"
+            android:layout_marginRight="@dimen/marginsmall"
+            android:layout_marginLeft="@dimen/marginsmall"
+            android:id="@+id/question"
+            android:textSize="@dimen/questionsize"
+            android:textAlignment="center"
+            android:visibility="invisible"/>
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:id="@+id/radiogrouplytis"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/woman"
+                style="@style/Wrap"
+                android:text="@string/moteris"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginRight="@dimen/marginsmall"/>
+
+            <RadioButton android:id="@+id/man"
+                style="@style/Wrap"
+                android:text="@string/vyras"
+                android:layout_marginLeft="@dimen/marginsmall"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+        <com.devprovider.customview.ToggleButtonGroupTableLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/radiogroup">
+            <TableRow>
+                <RadioButton android:id="@+id/p1" style="@style/radiobutton" />
+                <RadioButton android:id="@+id/p2" style="@style/radiobutton" />
+            </TableRow>
+            <TableRow>
+                <RadioButton android:id="@+id/p3" style="@style/radiobutton"/>
+                <RadioButton android:id="@+id/p4" style="@style/radiobutton" />
+            </TableRow>
+            <TableRow>
+                <RadioButton android:id="@+id/p5"
+                    style="@style/Wrap" />
+            </TableRow>
+        </com.devprovider.customview.ToggleButtonGroupTableLayout>
+        <RelativeLayout
+            style="@style/Match"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryLite"
+                    android:visibility="gone"
+                    android:id="@+id/back"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="@string/arrow" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/go"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:text="@string/pradeti" /></LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/sharelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@color/colorPrimaryDark">
+            <ImageView
+                android:layout_margin="@dimen/shareMargin"
+                android:layout_width="@dimen/shareSize"
+                android:layout_height="@dimen/shareSize"
+                android:src="@drawable/share"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout></LinearLayout>
+</ScrollView>
