@@ -2,6 +2,7 @@ package com.example.android.verygotestas;
 
 import android.content.Intent;
 import android.media.Image;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Layout;
@@ -21,7 +22,7 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Our health minister created a test. It evaluetes you if you have problem with alchohol or not. Questions and evaluation system if taken from https://www.facebook.com/DELFI.Lietuva/photos/a.173273562701715.41875.151962321499506/2148815425147509/?type=3&theater    and adapted
+    //Our health minister created a test. It evaluates you if you have problem with alchohol or not. Questions and evaluation system if taken from https://www.facebook.com/DELFI.Lietuva/photos/a.173273562701715.41875.151962321499506/2148815425147509/?type=3&theater    and adapted
     // I guess there is a easer way to do this especialy with radio buttons like I have done in Quiz app by getting checked resource id not like here i listen if radio button was clicked...
     //And animation, back,forward managing is strange also.. But i couldin't think any better at the time
     //Application was made for different screen sizes and for English and Lithianian languages
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     DecimalFormat format = new DecimalFormat("##");
     int[] a5 = new int[4];int[] a4 = new int[4];int[] a3 = new int[4];int[] a2 = new int[4];int[] a1 = new int[4];int[] i = new int[4];
     double ratio;
-    boolean toliau=true,pasikartojimas=false,is4=false;
+    boolean toliau=true,pasikartojimas=false;
     Button go,back;
     ImageView pic;
     RadioButton p5,p1,p2,p3,p4,man,woman;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     View radiogroup;
     TextView header, comment, question;
     Animation zoom,right,left;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -449,6 +451,7 @@ private void click(boolean toliau)
             p3.setText(getResources().getString(R.string.KARTĄ_PER_MĖNESĮ));
             p4.setText(getResources().getString(R.string.KARTĄ_PER_SAVAITĘ));
             p5.setText(getResources().getString(R.string.KASDIEN_ARBA_BEVEIK_KASDIEN));
+            header.setTextSize(40);
             p1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -509,7 +512,6 @@ private void click(boolean toliau)
                     p1.setChecked(false);
                 }
             });
-            is4=false;
             if(i[3]==100) {
                 pasikartojimas=false;
                 nr++;
@@ -540,6 +542,7 @@ private void click(boolean toliau)
             double maxa=maxbalai;
             ratio=(pereik/(maxa*3))*100;
             header.setText(getResources().getString(R.string.TAVYJE_ALKOHOLIKO));
+            header.setTextSize(30);
             comment.setVisibility(View.VISIBLE);
             if(ratio>=100)
                 ratio=100;
